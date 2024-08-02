@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grids and BEM</title>
+</head>
+<body>
+    <!-- Шапка профиля -->
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__menu header__menu--left">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#" target="_top">
+                        <img class="header__logo" src="img/menu.png" alt="Меню">
+                    </a>
+                </li>
+
+                <img class="header__divider" src="img/divider.png" alt="Разделитель палочка">
+                
+                <img class="header__logo-one" src="img/logo.png" alt="Логотип">
+
+            </ul>
+
+            <ul class="header__menu header__menu--right">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#" target="_top">
+                        <img class="header__logo" src="img/phone.png" alt="Телефон">
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#" target="_top">
+                        <img class="header__logo" src="img/user.png" alt="Письмо">
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#" target="_top">
+                        <img class="header__logo" src="img/user.png" alt="Пользователь">
+                    </a>
+                </li>
+                
+                <img class="header__divider" src="img/divider.png" alt="Разделитель палочка">
+                
+                <p class="header__logo-text">Оставить заявку</p>                
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#" target="_top">
+                        <img class="header__logo" src="img/settings.png" alt="Заявка на ремонт">
+                    </a>
+                </li>
+                <p class="header__logo-text" hidden>Статус ремонта</p>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#" target="_top">
+                        <img class="header__logo" src="img/search.png" alt="Поисковик">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="header__title">Услуги и сервисы</h1>
+
+        <nav class="header__second-nav">
+            <ul class="header__second-nav-list">
+                <li class="header__second-nav-item">Ремонтируемые бренды</li>
+                <li class="header__second-nav-item">Ремонтируемые устройства</li>
+                <li class="header__second-nav-item">Цена на услуги</li>
+                <li class="header__second-nav-item">Адреса сервисных центров</li>
+                <li class="header__second-nav-item">Специальные цены</li>
+                <li class="header__second-nav-item">Отзывы</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- /Шапка профиля -->
+
+    <!-- Тело -->
+    <section class="info-section">
+        <article class="info-section__article">
+            <p class="info-section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+            <p class="info-section__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            <button class="info-section__button">Читать далее</button>
+        </article>
+        <aside class="info-section__aside">
+            <img class="info-section__image" src="img/cps_picture.png" alt="График работы CPS компании">
+        </aside>
+    </section>
+    <!-- /Тело -->
+</body>
+</html>

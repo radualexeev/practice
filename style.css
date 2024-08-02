@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header {
+    width: 1120px;
+    height: auto;
+
+    /* border: 2px solid red; */
+}
+
+.header__nav {
+    width: 1116px;
+    height: 88px;
+    position: relative;
+}
+
+.header__menu {
+    width: auto;
+    height: auto;
+}
+
+.header__menu--left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.header__menu--right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.header__menu-item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+}
+
+.header__logo {
+    width: 18px;
+    height: 16px;
+}
+
+.header__logo-one {
+    width: 95px;
+    height: 50px;
+}
+
+.header__divider {
+    width: 2px;
+    height: 40px;
+}
+
+.header__menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo-text {
+    display: none;
+}
+
+.header__title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.header__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.01px;
+    height: 32px;
+    border: 3px solid #41F6D7;
+    border-top-right-radius: 6px 6px;
+    border-bottom-right-radius: 6px 6px;
+}
+
+.header__second-nav {
+    display: block;
+    width: 1120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.header__second-nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1086px;
+    padding-left: 30px;
+}
+
+.header__second-nav-item {
+    list-style: none;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    color: #7E7E82;
+    font-size: 16px;
+}
+
+.header__second-nav-item:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1120px;
+    height: auto;
+    /* border: 2px solid green; */
+
+}
+
+.info-section__article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    height: 250px;
+    padding: 30px;
+}
+
+.info-section__text {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+}
+
+.info-section__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+
+.info-section__button::before {
+    content: url(img/vector-down.png);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.6);
+}
+
+.info-section__aside {
+    display: block;
+    width: 50%;
+    height: 300px;
+}
+
+.info-section__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "TT Lakes Neue Light";
+    color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    background-color: #FF3E79;
+    border-radius: 50%;
+}
+
+.nav-block a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        width: 844px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+     }
+
+    .header__nav {
+        width: 100%; 
+    }
+
+    .header__menu--left .header__divider {
+        display: none;
+    }
+
+    .header__menu--right .header__menu-item:nth-child(-1n + 3) {
+        display: none;
+    }
+
+    .header__second-nav-list {
+        width: 100%; 
+        gap: 20px; 
+    }
+
+    .header__second-nav-item {
+        padding: 5px 10px; 
+        font-size: 14px; 
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 30px;
+        
+        border: 2px solid red;
+    }
+
+    .info-section__article {
+        border: 2px solid greenyellow;
+        width: 100%;
+    }
+
+    .info-section__aside {
+        border: 2px solid greenyellow;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1120px){
+    .header__logo-text {
+        display: block;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header__divider,
+    .header__logo-one,
+    .header__menu-item:nth-child(-n + 3) {
+        display: none;
+    }
+    
+    .header__menu--right {
+        gap: 10px;
+    }
+    .header__title {
+        position: absolute;
+        top: -26px;
+        left: 0;
+    }
+
+    .info-section__article {
+        padding-top: 5px;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .info-section__text {
+        margin-top: 0;
+        padding: 0;
+
+    }
+}
